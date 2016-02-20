@@ -29,7 +29,7 @@ word = args.word
 # The word is English
 if args.chinese:
 	# convert unicode to ascii
-	word = quote(word.encode('utf-8'))
+	word = quote(word)
 
 	url = 'https://glosbe.com/gapi/translate?from=zho&dest=eng&format=json&phrase=' + word + '&pretty=true'
 # The word is Chinese
