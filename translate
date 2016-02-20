@@ -26,13 +26,14 @@ parser.add_argument('word',help="The word that to be translated")
 args = parser.parse_args()
 word = args.word
 
-# The word is English
+# The word is Chinese
 if args.chinese:
 	# convert unicode to ascii
+	# word = quote(word.encode('utf-8'))
 	word = quote(word)
 
 	url = 'https://glosbe.com/gapi/translate?from=zho&dest=eng&format=json&phrase=' + word + '&pretty=true'
-# The word is Chinese
+# The word is English
 else:
 	url = 'https://glosbe.com/gapi/translate?from=eng&dest=zho&format=json&phrase=' + word + '&pretty=true'
 
