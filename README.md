@@ -48,7 +48,7 @@ $ translate dog      # -e 为默认选项
 ```bash
 $ translate -v dog
 ```             
-将中文 **`苹果`** 翻译成英文:               
+将中文 **`苹果`** 翻译成英文:                 
 
 ```bash
 $ translate -z 苹果            
